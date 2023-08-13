@@ -44,3 +44,27 @@ ALTER TABLE EMP ADD DEPT VARCHAR(20);
 
 DELETE FROM `EMP` WHERE `EMP_ID`=3
 
+
+
+CREATE TABLE customers(
+    id INT AUTO_INCREMENT,
+    first_name VARCHAR(255),
+    country VARCHAR(255),
+    capital VARCHAR(255),
+    PRIMARY KEY(id)
+);
+
+INSERT INTO customers VALUES(1,'Nishant', 'India', 'Delhi');
+INSERT INTO customers VALUES(2,'Nish', 'India', 'Delhi');
+INSERT INTO customers VALUES(3,'Nisha', 'Australia', 'Canbbera');
+INSERT INTO customers VALUES(4,'Nishaa', 'Maldives', 'Male');
+
+SELECT * FROM customers;
+
+
+SELECT * FROM customers WHERE country = 'India' or country = 'Maldives';
+SELECT * FROM customers WHERE country != 'India';
+SELECT * FROM customers WHERE not country = 'India';
+
+
+
